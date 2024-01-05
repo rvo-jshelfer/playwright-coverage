@@ -155,6 +155,10 @@ export async function convertToIstanbulCoverage(
         relativePath = posix.relative(pathToFileURL(sourceRoot).pathname, path);
       }
 
+      if (!relativePath) {
+        relativePath = '/';
+      }
+
       return relativePath;
     }
 
