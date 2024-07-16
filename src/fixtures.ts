@@ -36,7 +36,7 @@ const coverageFixtures: Fixtures<
     const result = await page.coverage.stopJSCoverage();
 
     const resultFile = testInfo.outputPath('v8-coverage.json');
-    await fs.writeFile(resultFile, JSON.stringify({result}));
+    // await fs.writeFile(resultFile, JSON.stringify({result}));
 
     testInfo.attachments.push({
       name: attachmentName,
