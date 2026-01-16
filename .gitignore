@@ -1,1 +1,3 @@
 *.tgz
+.npmrc
+.idea

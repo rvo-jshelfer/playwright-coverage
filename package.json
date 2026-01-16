@@ -1,6 +1,6 @@
 {
-  "name": "@bgotink/playwright-coverage",
-  "version": "0.2.1",
+  "name": "@healthline/playwright-coverage",
+  "version": "0.2.2",
   "main": "lib/index.js",
   "author": "Bram Gotink <bram@gotink.me>",
   "license": "MIT",
@@ -8,7 +8,10 @@
   "homepage": "https://github.com/bgotink/playwright-coverage",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bgotink/playwright-coverage.git"
+    "url": "https://github.com/healthline/together-monorepo.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/healthline"
   },
   "keywords": [
     "playwright",
@@ -23,7 +26,7 @@
   "scripts": {
     "prepack": "rm -fr lib && tsc"
   },
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "pnpm@10.22.0",
   "peerDependencies": {
     "@playwright/test": "^1.14.1"
   },
